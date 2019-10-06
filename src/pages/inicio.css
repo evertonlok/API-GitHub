@@ -14,7 +14,14 @@ html,body
     display: flex;
     align-items:center;
     justify-content: center;
-    border:2px solid red;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
+}
+.button
+{
+    margin-left:5px;
+}
+.input h1
+{
+    color:red;
 }

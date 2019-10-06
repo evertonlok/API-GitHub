@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import styled from "styled-components";
-
+import './inicio.css'
 export default class Inicio extends Component {
   
   state={
@@ -18,20 +17,16 @@ export default class Inicio extends Component {
       this.props.history.push('/perfil')
   }
   render() {
-  const Wrapper = styled.div
-  `
-     max-width: 600px;
-     margin: 0 auto;
-  `;
+
     return (
-      <Wrapper>
         <div className="input">
             <form onSubmit={this.handleSubmit} >
-                <input type="text" onChange={this.handleInputChange}/>
-                <button type="submit">Pesquisar</button>
+                 <h1>Usuário GitHub</h1>
+                <input type="text"  placeholder="Usuario GitHub" value={this.state.user} onChange={this.handleInputChange}/>
+                <button type="submit" className="button">Pesquisar</button>
             </form>
         </div>
-      </Wrapper>
+      
     )
   }
 }
