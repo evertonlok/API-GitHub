@@ -1,5 +1,6 @@
 .containerr
 {
     border: 2px solid blue;
-    margin:5px
+    margin:5px;
+    text-align: center;
 }
